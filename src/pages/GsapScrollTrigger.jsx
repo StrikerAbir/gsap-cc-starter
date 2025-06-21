@@ -17,16 +17,16 @@ const GsapScrollTrigger = () => {
         rotation: 360,
         borderRadius: "100%",
         scale: 1.5,
-        ease: "power1.inOut",
         scrollTrigger:{
           trigger:box,
           start:'bottom bottom',
           end:'top 10%',
           scrub: true,
-        }
+        },
+        ease: "power1.inOut",
       });
     });
-  }, []);
+  }, {scope: scrollRef});
 
   return (
     <main>
